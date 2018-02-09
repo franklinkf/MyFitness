@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+
+        <ImageButton
+            android:id="@+id/imgBack"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:src="@drawable/back"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="07-02-2018"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="2"/>
+
+        <ImageButton
+            android:id="@+id/imgForward"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:src="@drawable/fwd"
+            android:background="@null"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvWakeUp"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="Wake up @"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:layout_weight="3"/>
+
+        <EditText
+            android:id="@+id/etWakeUp"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1"
+            android:inputType="time" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvWeight"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="Weigth"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:layout_weight="1.5"/>
+
+        <Spinner
+            android:id="@+id/spWeight"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:layout_weight="1.5"/>
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:inputType="numberDecimal"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvBreadth"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="Breadth"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:layout_weight="1.5"/>
+
+        <Spinner
+            android:id="@+id/spBreadth"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:layout_weight="1.5"/>
+
+        <EditText
+            android:id="@+id/etBreadth"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:inputType="numberDecimal"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvWalking"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="Walking"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:layout_weight="1.5"/>
+
+        <Spinner
+            android:id="@+id/spWalking"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:layout_weight="1.5"/>
+
+        <EditText
+            android:id="@+id/etWalking"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:inputType="numberDecimal"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvCycling"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="Cycling"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:layout_weight="1.5"/>
+
+        <Spinner
+            android:id="@+id/spCycling"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:layout_weight="1.5"/>
+
+        <EditText
+            android:id="@+id/etCycling"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:inputType="numberDecimal"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvYoga"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="Yoga"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:layout_weight="1.5"/>
+
+        <Spinner
+            android:id="@+id/spYoga"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:layout_weight="1.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvMeat"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="Meat"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:layout_weight="1.5"/>
+
+
+
+        <Spinner
+            android:id="@+id/spMeat"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:layout_weight="1.5"/>
+
+
+    </LinearLayout>
+
+<!--    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvFish"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="Fish"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:layout_weight="1.5"/>
+
+        <Spinner
+            android:id="@+id/spFish"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:layout_weight="1.5"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tvBakery"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:padding="5dp"
+            android:text="Bakery"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal" />
+
+        <Spinner
+            android:id="@+id/spBakery"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvFruits"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="Fruits"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:layout_weight="1.5"/>
+
+        <Spinner
+            android:id="@+id/spFruits"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:layout_weight="1.5"/>
+
+
+    </LinearLayout>-->
+
+<!--    <button
+        android:id="@+id/btnsave"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:text="save" />-->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="saveData"
+            android:text="Save" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
